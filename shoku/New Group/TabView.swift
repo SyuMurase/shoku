@@ -1,10 +1,3 @@
-//
-//  TabView.swift
-//  shoku
-//
-//  Created by 村瀬嵩 on 2023/01/21.
-//
-
 import SwiftUI
 
 struct Tabview: View {

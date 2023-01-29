@@ -1,10 +1,3 @@
-//
-//  ButtomBotton.swift
-//  TinderApp
-//
-//  Created by 村瀬嵩 on 2023/01/02.
-//
-
 import SwiftUI
 
 struct ButtomBotton: View {
