@@ -7,7 +7,15 @@ struct InstaView: View {
     var body: some View {
         TabView {
             NavigationView {
-                Text("Here")
+                
+                ScrollView(.vertical,showsIndicators: false){
+                    VStack {
+//                        StoryView(stories: stories)
+                        StoryView()
+                        Divider()
+                        TimeLIne(timelines: timelines)
+                    }
+                }
                     .navigationBarTitle(Text("Instagram"),displayMode: .inline)//displaymodal
                     .navigationBarItems(
                         leading: IconView(systemName: "camera"),

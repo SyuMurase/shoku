@@ -9,11 +9,11 @@ struct Timeline {
 }
 
 let timelines: [Timeline] = [
-    Timeline(id: 0, name: "Arupaka", image: "bulldog", post: "This is post content", post_image: "ice_1"),
-    Timeline(id: 1, name: "Buta", image: "bird", post: "This is post content", post_image: "ice_2"),
-    Timeline(id: 2, name: "Hamster", image: "animal_hamster", post: "This is post content", post_image: "flower"),
-    Timeline(id: 3, name: "Hiyoko", image: "animal_hiyoko", post: "This is post content", post_image: "moon"),
-    Timeline(id: 4, name: "Inu", image: "animal_inu", post: "This is post content", post_image: "animal_inu")
+    Timeline(id: 0, name: "Arupaka", image: "bulldog", post: "This is post content", post_image: "nikuzushi"),
+    Timeline(id: 1, name: "Buta", image: "bird", post: "This is post content", post_image: "cookies"),
+    Timeline(id: 2, name: "Hamster", image: "boys", post: "This is post content", post_image: "sandwich1"),
+    Timeline(id: 3, name: "Hiyoko", image: "bullwith", post: "This is post content", post_image: "fries"),
+    Timeline(id: 4, name: "Inu", image: "chick", post: "This is post content", post_image: "choclates")
 ]
 
 struct TimeLIne: View {
@@ -57,7 +57,8 @@ struct TimeLIne: View {
 
 struct TimeLIne_Previews: PreviewProvider {
     static var previews: some View {
-        TimeLIne(timelines: timelines)
+            InstaView()
+//        TimeLIne(timelines: timelines)
 //        TimelineView(timelines: timelines)
     }
 }
