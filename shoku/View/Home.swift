@@ -54,7 +54,8 @@ struct Home: View {
         }
         .overlay(
             Color.white
-                .frame(height:UIApplication.shared.windows.first?.windowScene?.windows.first?.safeAreaInsets.top)
+//                .frame(height:UIApplication.shared.windows.first?.windowScene?.windows.first?.safeAreaInsets.top)
+                .frame(height:windowScene?.windows.first?.safeAreaInsets.top)
                 .ignoresSafeArea(.all,edges: .top)
                 .opacity(homeData.offset > 250 ? 1 : 0)
             ,alignment:  .top
