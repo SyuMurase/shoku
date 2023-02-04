@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6603FAE4297C1903009CD2CE /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6603FAE3297C1903009CD2CE /* TabView.swift */; };
+		66115FA229892F4000F99E23 /* BottonModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66115FA129892F4000F99E23 /* BottonModal.swift */; };
+		66115FA42989326200F99E23 /* AfterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66115FA32989326200F99E23 /* AfterModal.swift */; };
+		66115FA6298933E100F99E23 /* EachModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66115FA5298933E100F99E23 /* EachModal.swift */; };
 		6612C9592985510B004C31B2 /* InstaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6612C9582985510B004C31B2 /* InstaView.swift */; };
 		6612C95B29855D4F004C31B2 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6612C95A29855D4F004C31B2 /* StoryView.swift */; };
 		6612C95E2986AC2E004C31B2 /* TimeLIne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6612C95D2986AC2E004C31B2 /* TimeLIne.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		6603FAE3297C1903009CD2CE /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		66115FA129892F4000F99E23 /* BottonModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonModal.swift; sourceTree = "<group>"; };
+		66115FA32989326200F99E23 /* AfterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterModal.swift; sourceTree = "<group>"; };
+		66115FA5298933E100F99E23 /* EachModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachModal.swift; sourceTree = "<group>"; };
 		6612C9582985510B004C31B2 /* InstaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaView.swift; sourceTree = "<group>"; };
 		6612C95A29855D4F004C31B2 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		6612C95C29861FB8004C31B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 				6612C9582985510B004C31B2 /* InstaView.swift */,
 				6612C95A29855D4F004C31B2 /* StoryView.swift */,
 				6612C95D2986AC2E004C31B2 /* TimeLIne.swift */,
+				66115FA129892F4000F99E23 /* BottonModal.swift */,
+				66115FA5298933E100F99E23 /* EachModal.swift */,
+				66115FA32989326200F99E23 /* AfterModal.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -99,6 +108,7 @@
 				66541631297863F200C5AA9D /* New Group */,
 				6612C957298550B3004C31B2 /* Instagram */,
 				6654161529783E1D00C5AA9D /* Assets.xcassets */,
+				6654161129783E1B00C5AA9D /* shokuApp.swift */,
 				6654161729783E1D00C5AA9D /* Preview Content */,
 			);
 			path = shoku;
@@ -139,7 +149,6 @@
 				66BD7CF0298101C2008AA2A9 /* LoginView.swift */,
 				66BD7CF229810247008AA2A9 /* SignView.swift */,
 				6654161329783E1B00C5AA9D /* ContentView.swift */,
-				6654161129783E1B00C5AA9D /* shokuApp.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -180,7 +189,7 @@
 				};
 			};
 			buildConfigurationList = 6654160929783E1B00C5AA9D /* Build configuration list for PBXProject "shoku" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -228,6 +237,9 @@
 				665416352979217C00C5AA9D /* ButtomBotton.swift in Sources */,
 				66BD7CF329810247008AA2A9 /* SignView.swift in Sources */,
 				66541626297845A900C5AA9D /* CardView.swift in Sources */,
+				66115FA42989326200F99E23 /* AfterModal.swift in Sources */,
+				66115FA6298933E100F99E23 /* EachModal.swift in Sources */,
+				66115FA229892F4000F99E23 /* BottonModal.swift in Sources */,
 				6654161229783E1B00C5AA9D /* shokuApp.swift in Sources */,
 				6654162829784A3100C5AA9D /* HeaderView.swift in Sources */,
 			);
@@ -366,7 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +408,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

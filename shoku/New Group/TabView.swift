@@ -28,7 +28,7 @@ struct TabAView: View {
 }
 struct TabBView: View {
     var body: some View {
-        Text("TabA")
+        InstaView()
     }
 }
 struct TabCView: View {

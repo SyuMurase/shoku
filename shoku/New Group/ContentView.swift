@@ -2,32 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Home()
+        ButtomBotton()
     }
 }
-
-//struct ContentView: View {
-//    var body: some View {
-//        VStack {
-//            ZStack {
-//                Color.white
-//                    .frame(width: 60, height: 60)
-//                    .cornerRadius(100)
-//                    .shadow(radius:10)
-//
-//                Button(action: {
-//
-//                }, label: {
-//                    Image(systemName: "square.and.arrow.up")
-//                        .resizable()
-//                        .scaledToFill()
-//                        .frame(width: 25,height: 25,alignment: .center)
-//                })
-//            }
-//        }
-//        .padding()
-//    }
-//}
 
 //struct ContentView: View {
 //    @StateObject var homeData = HomeViewModel()
@@ -67,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Tabview()
     }
 }

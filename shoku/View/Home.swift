@@ -2,6 +2,9 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var homeData = HomeViewModel()
+    
+    let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+//    func banner.rootViewController = windowScene?.windows.first!.rootViewController
     var body: some View {
         ScrollView{
             
@@ -56,8 +59,10 @@ struct Home: View {
                 .opacity(homeData.offset > 250 ? 1 : 0)
             ,alignment:  .top
             )
+        
     }
 }
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {

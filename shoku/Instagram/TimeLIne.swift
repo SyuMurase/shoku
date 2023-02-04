@@ -57,8 +57,8 @@ struct TimeLIne: View {
 
 struct TimeLIne_Previews: PreviewProvider {
     static var previews: some View {
-            InstaView()
-//        TimeLIne(timelines: timelines)
+//            InstaView()
+        TimeLIne(timelines: timelines)
 //        TimelineView(timelines: timelines)
     }
 }

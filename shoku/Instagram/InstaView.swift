@@ -7,11 +7,11 @@ struct InstaView: View {
     var body: some View {
         TabView {
             NavigationView {
-                
                 ScrollView(.vertical,showsIndicators: false){
                     VStack {
 //                        StoryView(stories: stories)
-                        StoryView()
+                        EachModal()
+                            .frame(height: 100)
                         Divider()
                         TimeLIne(timelines: timelines)
                     }
