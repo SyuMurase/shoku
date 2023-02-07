@@ -1,18 +1,30 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @State private var sheetFlag = false
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10){
-            Text("お寿司！")
+            Text("店名")
                 .font(.title)
                 .fontWeight(.bold)
             Text("Asia . Japanese . Watnow")
                 .font(.caption)
             HStack(spacing: 10){
                 Image(systemName: "clock").font(.caption)
-                Text("30-40 Min").font(.caption)
-                Text("500円")
+                
+                Button("場所！") {
+                            self.sheetFlag.toggle()
+                        }
+                        .sheet(isPresented: $sheetFlag) {
+                            SheetView()
+//                            Image("position")
+//                                .resizable()
+//                                .frame(height: 200)
+                        }
+
+                Text("値段　500円")
                     .font(.caption)
                     .padding(.leading,10)
             }
@@ -23,6 +35,23 @@ struct HeaderView: View {
         .background(Color.white)
         .ignoresSafeArea()
     }
+}
+
+
+struct SheetView: View {
+  @Environment(\.presentationMode) var presentationMode
+  
+  var body: some View {
+    NavigationView {
+        Image("position")
+            .resizable()
+            .frame(height: 200)
+      .navigationBarTitle("キッチンカーの場所",displayMode: .inline)
+      .navigationBarItems(leading: Button("閉じる") {
+          self.presentationMode.wrappedValue.dismiss()
+      })
+    }
+  }
 }
 
 struct HeaderView_Previews: PreviewProvider {

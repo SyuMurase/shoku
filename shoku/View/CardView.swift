@@ -16,7 +16,7 @@ struct CardView: View {
                 Text(food.price)
                     .fontWeight(.bold)
             })
-            .background(Color.white)
+            .background(Color.orange)
             .opacity(10)
             
             Spacer(minLength: 10)
@@ -27,11 +27,12 @@ struct CardView: View {
                 .frame(width: 130, height: 130)
                 .cornerRadius(10)
         }
-        .padding(.horizontal)
-        .background(Color.gray)
+        .padding(.leading)
+        .background(Color.orange)
         
     }
 }
+
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {

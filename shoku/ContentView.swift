@@ -2,12 +2,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ButtomBotton()
+        Home()
     }
 }
 
 //struct ContentView: View {
 //    @StateObject var homeData = HomeViewModel()
+//
 //    var body: some View {
 //        ScrollView{
 //
@@ -44,6 +45,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Tabview()
+        ContentView()
     }
 }

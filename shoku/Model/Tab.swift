@@ -16,7 +16,7 @@ struct Tab: Identifiable {
     var tabsItems = [
         
     Tab(tab: "Moku Moku", foods: foods.shuffled ()) ,
-    Tab(tab: "Picked For You", foods: foods.shuffled ()),
-    Tab (tab: "Starters", foods: foods.shuffled()),
-    Tab(tab: "Gimpub Sushi", foods: foods.shuffled()),
+//    Tab(tab: "Picked For You", foods: foods.shuffled ()),
+//    Tab (tab: "Starters", foods: foods.shuffled()),
+//    Tab(tab: "Gimpub Sushi", foods: foods.shuffled()),
 ]

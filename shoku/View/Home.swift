@@ -4,9 +4,10 @@ struct Home: View {
     @StateObject var homeData = HomeViewModel()
     
     let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-//    func banner.rootViewController = windowScene?.windows.first!.rootViewController
+    //debugging:'windows' was deprecated
+    
     var body: some View {
-        ScrollView{
+        ScrollView(){
             
             LazyVStack(alignment: .leading, spacing: 15, pinnedViews: [.sectionHeaders] ,content: {
                 
@@ -39,10 +40,12 @@ struct Home: View {
                                 .fontWeight(.bold)
                                 .padding(.bottom)
                                 .padding(.leading)
+                            
+                            Grid()
 
-                            ForEach(tab.foods){food in
-                                CardView(food: food)
-                            }
+//                            ForEach(tab.foods){food in
+//                                CardView(food: food)
+//                            }
 
                             Divider()
 //                                .padding(.top)
@@ -54,7 +57,6 @@ struct Home: View {
         }
         .overlay(
             Color.white
-//                .frame(height:UIApplication.shared.windows.first?.windowScene?.windows.first?.safeAreaInsets.top)
                 .frame(height:windowScene?.windows.first?.safeAreaInsets.top)
                 .ignoresSafeArea(.all,edges: .top)
                 .opacity(homeData.offset > 250 ? 1 : 0)
