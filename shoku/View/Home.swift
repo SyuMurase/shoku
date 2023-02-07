@@ -40,18 +40,33 @@ struct Home: View {
                                 .fontWeight(.bold)
                                 .padding(.bottom)
                                 .padding(.leading)
-                            
+
                             Grid()
 
-//                            ForEach(tab.foods){food in
-//                                CardView(food: food)
-//                            }
-
                             Divider()
-//                                .padding(.top)
+                                .padding(.top)
                         })
                     }
                 }
+                
+//                Section(header:HeaderView()) {
+//
+//                    ForEach(tabsItems){tab in
+//                        VStack(alignment: .leading, spacing: 15, content: {
+//                            Text(tab.tab)
+//                                .font(.title2)
+//                                .fontWeight(.bold)
+//                                .padding(.bottom)
+//                                .padding(.leading)
+//
+//                            ForEach(tab.foods){food in
+//                                CardView(food: food)
+//                            }
+//
+//                            Divider()
+//                        })
+//                    }
+//                }
                 
             })
         }

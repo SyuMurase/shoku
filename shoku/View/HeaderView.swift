@@ -48,6 +48,7 @@ struct SheetView: View {
             .frame(height: 200)
       .navigationBarTitle("キッチンカーの場所",displayMode: .inline)
       .navigationBarItems(leading: Button("閉じる") {
+          //閉じる機能
           self.presentationMode.wrappedValue.dismiss()
       })
     }
@@ -56,6 +57,6 @@ struct SheetView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HeaderView()
     }
 }
