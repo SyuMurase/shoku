@@ -1,10 +1,3 @@
-//
-//  GridItem.swift
-//  shoku
-//
-//  Created by 村瀬嵩 on 2023/02/07.
-//
-
 import SwiftUI
 
 struct GridView: View {
@@ -12,11 +5,11 @@ struct GridView: View {
 //    let grids = Array(repeating: GridItem(.adaptive(minimum: 140, maximum: 140))
     
     var body: some View {
-        ScrollView {
+//        ScrollView {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 140))]) {
 //            LazyVGrid(columns: grids) {
             
-                ForEach((1...10), id: \.self) { num in
+                ForEach((1...4), id: \.self) { num in
 //                    Image("sandwich1")
 //                        .resizable()
 //                        .aspectRatio(contentMode: .fit)
@@ -26,8 +19,8 @@ struct GridView: View {
                         .frame(width: 130, height:150)
                 }
             }
-        }
-        .padding(.horizontal)
+//        }
+//        .padding(.horizontal)
     }
 }
 

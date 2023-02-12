@@ -14,11 +14,42 @@ struct HomeRitsu: View {
             Image("nikuzushi")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-            Text("ああ")
+                .frame(width: 300,height: 200)
+                .border(Color.white)
+                .clipped()
+//                .padding(.all)
+            
+//            Spacer()
+            HStack{
+                VStack(alignment: .leading, spacing :10, content:{
+                    Text("NINA SPACE")
+                        .font(.caption)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    Text("店舗の説明")
+                        .font(.caption)
+                   .font(.title2)
+                        .fontWeight(.bold)
+                })
+//                Spacer()
+                Text("営業中")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.green)
+                    .padding(.horizontal)
+            }
+            .padding(.all)
         }
-        .background(Color.blue)
-        .frame(width: 130,height: 200)
+        .background(.white)
+        .overlay(RoundedRectangle(cornerRadius: 30)
+            .stroke(Color.gray, lineWidth: 2))
+        .clipShape(RoundedRectangle(cornerRadius: 30))
         
+        .shadow(color: Color.gray.opacity(0.6), radius: 4, x: 8, y: 10)
+//        .background(Color.gray)
+        
+//        .cornerRadius(10)
+//        .padding(.horizontal)
     }
 }
 
