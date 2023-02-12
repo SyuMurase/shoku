@@ -10,7 +10,6 @@
 		664E1F5029917EAD007697B1 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E1F4F29917EAD007697B1 /* GridView.swift */; };
 		664E1F5229918631007697B1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E1F5129918631007697B1 /* Test.swift */; };
 		664E1F562991931E007697B1 /* SeetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E1F552991931E007697B1 /* SeetView.swift */; };
-		664E1F5E2992572F007697B1 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E1F5D2992572F007697B1 /* TimelineView.swift */; };
 		664E1F61299283E2007697B1 /* ChildTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E1F60299283E1007697B1 /* ChildTimelineView.swift */; };
 		6654161229783E1B00C5AA9D /* shokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654161129783E1B00C5AA9D /* shokuApp.swift */; };
 		6654161429783E1B00C5AA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654161329783E1B00C5AA9D /* ContentView.swift */; };
@@ -25,8 +24,8 @@
 		66541630297863E900C5AA9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6654162F297863E900C5AA9D /* HomeView.swift */; };
 		665416352979217C00C5AA9D /* ButtomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665416342979217C00C5AA9D /* ButtomBotton.swift */; };
 		66599B352994ACEA00987AC9 /* TimelineNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66599B342994ACEA00987AC9 /* TimelineNav.swift */; };
-		66599B372994B36800987AC9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66599B362994B36800987AC9 /* SwiftUIView.swift */; };
 		66941E77299929D400B6B8D3 /* HomeRitsu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66941E76299929D400B6B8D3 /* HomeRitsu.swift */; };
+		669F1207299953BF007EA0C4 /* NavigateVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F1206299953BF007EA0C4 /* NavigateVariable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		664E1F4F29917EAD007697B1 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		664E1F5129918631007697B1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		664E1F552991931E007697B1 /* SeetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeetView.swift; sourceTree = "<group>"; };
-		664E1F5D2992572F007697B1 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		664E1F60299283E1007697B1 /* ChildTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTimelineView.swift; sourceTree = "<group>"; };
 		6654160E29783E1B00C5AA9D /* shoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6654161129783E1B00C5AA9D /* shokuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shokuApp.swift; sourceTree = "<group>"; };
@@ -50,8 +48,8 @@
 		6654162F297863E900C5AA9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		665416342979217C00C5AA9D /* ButtomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomBotton.swift; sourceTree = "<group>"; };
 		66599B342994ACEA00987AC9 /* TimelineNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineNav.swift; sourceTree = "<group>"; };
-		66599B362994B36800987AC9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		66941E76299929D400B6B8D3 /* HomeRitsu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRitsu.swift; sourceTree = "<group>"; };
+		669F1206299953BF007EA0C4 /* NavigateVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateVariable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +75,9 @@
 		664E1F5F299282D3007697B1 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				669F1206299953BF007EA0C4 /* NavigateVariable.swift */,
 				66599B342994ACEA00987AC9 /* TimelineNav.swift */,
-				66599B362994B36800987AC9 /* SwiftUIView.swift */,
 				664E1F60299283E1007697B1 /* ChildTimelineView.swift */,
-				664E1F5D2992572F007697B1 /* TimelineView.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -131,10 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				665416212978400600C5AA9D /* Home.swift */,
-				66941E76299929D400B6B8D3 /* HomeRitsu.swift */,
 				6654162729784A3100C5AA9D /* HeaderView.swift */,
 				66541625297845A900C5AA9D /* CardView.swift */,
 				664E1F552991931E007697B1 /* SeetView.swift */,
+				66941E76299929D400B6B8D3 /* HomeRitsu.swift */,
 				664E1F5F299282D3007697B1 /* Timeline */,
 			);
 			path = View;
@@ -220,10 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669F1207299953BF007EA0C4 /* NavigateVariable.swift in Sources */,
 				66541630297863E900C5AA9D /* HomeView.swift in Sources */,
 				664E1F61299283E2007697B1 /* ChildTimelineView.swift in Sources */,
-				66599B372994B36800987AC9 /* SwiftUIView.swift in Sources */,
-				664E1F5E2992572F007697B1 /* TimelineView.swift in Sources */,
 				66541624297841A200C5AA9D /* Food.swift in Sources */,
 				6654161429783E1B00C5AA9D /* ContentView.swift in Sources */,
 				6654162029783FE200C5AA9D /* ViewModel.swift in Sources */,

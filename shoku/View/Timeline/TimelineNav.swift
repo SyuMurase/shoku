@@ -22,16 +22,15 @@ struct TimelineNav: View {
         }
     
     var body: some View {
+        
         NavigationView() {
             ZStack{
-                
                 VStack(alignment: .leading, spacing: 15, content: {
                     Text("Moku Moku")
                         .font(.title2)
                         .fontWeight(.bold)
                         .padding(.bottom)
                         .padding(.leading)
-                    
                     
                     ForEach(foods){ s in
                         NavigationLink(destination: Home()) {

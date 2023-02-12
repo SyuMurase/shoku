@@ -5,6 +5,7 @@ struct Home: View {
     
     let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
     //debugging:'windows' was deprecated
+    let ArrangeImage: String = "nikuzushi"
     
     var body: some View {
         ScrollView(){
@@ -21,7 +22,7 @@ struct Home: View {
                     }
                     
                     return AnyView (
-                        Image("nikuzushi")
+                        Image(ArrangeImage)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width,height: 250 + (offset > 0 ? offset : 0))
