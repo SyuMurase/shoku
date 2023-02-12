@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Grid: View {
+struct GridView: View {
 //    let grids = Array(repeating: GridItem(.fixed(100)), count:2)
 //    let grids = Array(repeating: GridItem(.adaptive(minimum: 140, maximum: 140))
     
@@ -53,6 +53,6 @@ struct Page: View {
 
 struct Grid_Previews: PreviewProvider {
     static var previews: some View {
-        Grid()
+        GridView()
     }
 }

@@ -23,7 +23,7 @@ struct TimelineView: View {
     var body: some View {
         NavigationView() {
             ZStack{
-                Color.orange.edgesIgnoringSafeArea(.all)
+//                Color.orange.edgesIgnoringSafeArea(.all)
                 VStack{
                     NavigationLink(destination: Home()) {
                         ChildTimelineView()

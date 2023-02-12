@@ -41,7 +41,7 @@ struct Home: View {
                                 .padding(.bottom)
                                 .padding(.leading)
 
-                            Grid()
+                            GridView()
 
                             Divider()
                                 .padding(.top)
@@ -49,6 +49,7 @@ struct Home: View {
                     }
                 }
                 
+                //body
 //                Section(header:HeaderView()) {
 //
 //                    ForEach(tabsItems){tab in
