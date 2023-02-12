@@ -5,6 +5,7 @@ struct Home: View {
     
     let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
     //debugging:'windows' was deprecated
+    let ArrangeImage: String = "nikuzushi"
     
     var body: some View {
         ScrollView(){
@@ -21,7 +22,7 @@ struct Home: View {
                     }
                     
                     return AnyView (
-                        Image("nikuzushi")
+                        Image(ArrangeImage)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width,height: 250 + (offset > 0 ? offset : 0))
@@ -40,18 +41,34 @@ struct Home: View {
                                 .fontWeight(.bold)
                                 .padding(.bottom)
                                 .padding(.leading)
-                            
-                            Grid()
 
-//                            ForEach(tab.foods){food in
-//                                CardView(food: food)
-//                            }
+                            GridView()
 
                             Divider()
-//                                .padding(.top)
+                                .padding(.top)
                         })
                     }
                 }
+                
+                //body
+//                Section(header:HeaderView()) {
+//
+//                    ForEach(tabsItems){tab in
+//                        VStack(alignment: .leading, spacing: 15, content: {
+//                            Text(tab.tab)
+//                                .font(.title2)
+//                                .fontWeight(.bold)
+//                                .padding(.bottom)
+//                                .padding(.leading)
+//
+//                            ForEach(tab.foods){food in
+//                                CardView(food: food)
+//                            }
+//
+//                            Divider()
+//                        })
+//                    }
+//                }
                 
             })
         }

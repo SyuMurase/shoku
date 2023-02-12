@@ -16,7 +16,7 @@ struct CardView: View {
                 Text(food.price)
                     .fontWeight(.bold)
             })
-            .background(Color.orange)
+//            .background(Color.orange)
             .opacity(10)
             
             Spacer(minLength: 10)
@@ -28,7 +28,7 @@ struct CardView: View {
                 .cornerRadius(10)
         }
         .padding(.leading)
-        .background(Color.orange)
+//        .background(Color.orange)
         
     }
 }
